@@ -1,0 +1,85 @@
+/*-----------------------*/
+/* Reset                 */
+/*----------------------*/
+
+/* Box sizing */
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
+/* Reset margins */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+figure,
+picture {
+    margin: 0;
+}
+
+
+/* Set up the body  */
+body{
+    /* the default line height is 1.4 */
+    line-height: 1.5;
+    min-height: 100vh;
+}
+
+/* Make images easier to work with */
+img,
+picture{
+    max-width: 100%;
+    display: block;
+}
+
+/* Make form elements easier to work with */
+input,
+button,
+textarea,
+select{
+    font: inherit;
+}
+
+@font-face {
+    font-family: Norse;
+    src: url("Norse-Bold.otf");
+}
+
+.container{
+    display: flex;
+}
+
+.logo-area{
+    background-image: url(./images/halie.jpg);
+    height: 100vh;
+    background-size: cover;
+    width: 50vw;
+    
+}
+
+
+.logo-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 12rem;
+    background-color: rgb(42, 52, 57, 60%);
+}
+
+.odin-text{
+    align-self: center;
+    text-transform: uppercase;
+    font-family: Norse;
+    font-size: 7rem;
+    color: white;
+}
+
+
+.odin-logo{
+    width: auto;
+    height: 9rem;
+}

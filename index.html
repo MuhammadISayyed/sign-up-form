@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Sign up form</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="logo-area">
+        <div class="logo-container">
+          <img
+            class="odin-logo"
+            src="./images/odin-lined.png"
+            alt="the odin project logo"
+          />
+          <h1 class="odin-text">odin</h1>
+        </div>
+      </div>
+      <div class="form-area">
+        <p class="intro">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore iure,
+          eum ipsa inventore aliquam distinctio! Odit earum sit odio aspernatur
+          eaque natus dicta unde, maiores sint.
+
+          <span class="italic-style">Quia enim quisquam ipsa?</span>
+        </p>
+
+        <form action="post">
+          <fieldset>
+            <legend class="form-header">Let's do this!</legend>
+            <div class="first-section">
+              <label for="first-name">First Name</label>
+              <input type="text" id="first-name" name="first-name" />
+              <label for="last-name">Last Name</label>
+              <input type="text" id="last-name" name="last-name" />
+            </div>
+
+            <div class="second-section">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" />
+              <label for="phone">Phone Number</label>
+              <input type="number" id="phone" name="phone" />
+            </div>
+
+            <div class="third-section">
+              <label for="password">Password</label>
+              <input type="password" id="password" name="password" />
+              <label for="confirm-password">Confirm password</label>
+              <input
+                type="password"
+                id="confirm-password"
+                name="confirm-password"
+              />
+            </div>
+          </fieldset>
+
+          <button type="submit">Create Account</button>
+          <p class="have-account">
+            Already have an account? <a href="">Log in</a>
+          </p>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
