@@ -5,8 +5,8 @@
 /* Box sizing */
 *,
 *::before,
-*::after{
-    box-sizing: border-box;
+*::after {
+  box-sizing: border-box;
 }
 
 /* Reset margins */
@@ -18,68 +18,105 @@ h4,
 h5,
 figure,
 picture {
-    margin: 0;
+  margin: 0;
 }
 
-
 /* Set up the body  */
-body{
-    /* the default line height is 1.4 */
-    line-height: 1.5;
-    min-height: 100vh;
+body {
+  /* the default line height is 1.4 */
+  line-height: 1.5;
+  min-height: 100vh;
 }
 
 /* Make images easier to work with */
 img,
-picture{
-    max-width: 100%;
-    display: block;
+picture {
+  max-width: 100%;
+  display: block;
 }
 
 /* Make form elements easier to work with */
 input,
 button,
 textarea,
-select{
-    font: inherit;
+select {
+  font: inherit;
 }
 
 @font-face {
-    font-family: Norse;
-    src: url("Norse-Bold.otf");
+  font-family: Norse;
+  src: url("Norse-Bold.otf");
 }
 
-.container{
-    display: flex;
+.container {
+  display: flex;
 }
 
-.logo-area{
-    background-image: url(./images/halie.jpg);
-    height: 100vh;
-    background-size: cover;
-    width: 50vw;
-    
+.logo-area {
+  background-image: url(./images/halie.jpg);
+  height: 100vh;
+  background-size: cover;
+  width: 50vw;
 }
 
-
-.logo-container{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 12rem;
-    background-color: rgb(42, 52, 57, 60%);
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 12rem;
+  background-color: rgb(42, 52, 57, 60%);
 }
 
-.odin-text{
-    align-self: center;
-    text-transform: uppercase;
-    font-family: Norse;
-    font-size: 7rem;
-    color: white;
+.odin-text {
+  align-self: center;
+  text-transform: uppercase;
+  font-family: Norse;
+  font-size: 7rem;
+  color: white;
 }
 
+.odin-logo {
+  width: auto;
+  height: 9rem;
+}
 
-.odin-logo{
-    width: auto;
-    height: 9rem;
+fieldset {
+  border: none;
+  padding: 0;
+}
+
+.form-section {
+  display: flex;
+  gap: 5rem;
+}
+
+.form-element {
+  padding-block: 0.6rem;
+}
+
+.form-intro {
+  background-color: grey;
+  padding: 9rem 20rem 2rem 3rem;
+}
+
+.form-wrapper {
+  padding: 2rem 15rem 0 3rem;
+}
+
+.form-header {
+  padding-bottom: 1.2rem;
+}
+
+.form-input {
+  width: 15rem;
+  height: 1.7rem;
+}
+
+.form-label,
+.form-input {
+  display: block;
+}
+
+.submit-area {
+  padding-block: 1.5rem;
 }

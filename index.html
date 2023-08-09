@@ -19,48 +19,92 @@
         </div>
       </div>
       <div class="form-area">
-        <p class="intro">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore iure,
-          eum ipsa inventore aliquam distinctio! Odit earum sit odio aspernatur
-          eaque natus dicta unde, maiores sint.
+        <div class="form-intro">
+          <p class="pragraph">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
+            iure, eum ipsa inventore aliquam distinctio! Odit earum sit odio
+            aspernatur eaque natus dicta unde, maiores sint.
 
-          <span class="italic-style">Quia enim quisquam ipsa?</span>
-        </p>
-
-        <form action="post">
-          <fieldset>
-            <legend class="form-header">Let's do this!</legend>
-            <div class="first-section">
-              <label for="first-name">First Name</label>
-              <input type="text" id="first-name" name="first-name" />
-              <label for="last-name">Last Name</label>
-              <input type="text" id="last-name" name="last-name" />
-            </div>
-
-            <div class="second-section">
-              <label for="email">Email</label>
-              <input type="email" id="email" name="email" />
-              <label for="phone">Phone Number</label>
-              <input type="number" id="phone" name="phone" />
-            </div>
-
-            <div class="third-section">
-              <label for="password">Password</label>
-              <input type="password" id="password" name="password" />
-              <label for="confirm-password">Confirm password</label>
-              <input
-                type="password"
-                id="confirm-password"
-                name="confirm-password"
-              />
-            </div>
-          </fieldset>
-
-          <button type="submit">Create Account</button>
-          <p class="have-account">
-            Already have an account? <a href="">Log in</a>
+            <span class="italic-style">Quia enim quisquam ipsa?</span>
           </p>
-        </form>
+        </div>
+
+        <div class="form-wrapper">
+          <form action="post">
+            <fieldset>
+              <legend class="form-header">Let's do this!</legend>
+              <div class="form-section">
+                <div class="form-element">
+                  <label for="first-name">First Name</label>
+                  <input
+                    class="form-input"
+                    type="text"
+                    id="first-name"
+                    name="first-name"
+                  />
+                </div>
+                <div class="form-element">
+                  <label for="last-name">Last Name</label>
+                  <input
+                    class="form-input"
+                    type="text"
+                    id="last-name"
+                    name="last-name"
+                  />
+                </div>
+              </div>
+
+              <div class="form-section">
+                <div class="form-element">
+                  <label class="form-label" for="email">Email</label>
+                  <input
+                    class="form-input"
+                    type="email"
+                    id="email"
+                    name="email"
+                  />
+                </div>
+                <div class="form-element">
+                  <label for="phone">Phone Number</label>
+                  <input
+                    class="form-input"
+                    type="number"
+                    id="phone"
+                    name="phone"
+                  />
+                </div>
+              </div>
+
+              <div class="form-section">
+                <div class="form-element">
+                  <label for="password">Password</label>
+                  <input
+                    class="form-input"
+                    type="password"
+                    id="password"
+                    name="password"
+                  />
+                </div>
+                <div class="form-element">
+                  <label for="confirm-password">Confirm password</label>
+                  <input
+                    class="form-input"
+                    type="password"
+                    id="confirm-password"
+                    name="confirm-password"
+                  />
+                </div>
+              </div>
+            </fieldset>
+
+            <div class="submit-area">
+              <button type="submit">Create Account</button>
+              <p class="have-account">
+                Already have an account? <a href="">Log in</a>
+              </p>
+            </div>
+          </form>
+        </div>
       </div>
     </div>
   </body>
