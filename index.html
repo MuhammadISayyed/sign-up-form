@@ -3,6 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,300;10..48,400;10..48,500;10..48,600&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./style.css" />
     <title>Sign up form</title>
   </head>
@@ -24,85 +30,95 @@
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
             iure, eum ipsa inventore aliquam distinctio! Odit earum sit odio
             aspernatur eaque natus dicta unde, maiores sint.
-
-            <span class="italic-style">Quia enim quisquam ipsa?</span>
           </p>
+
+          <span class="italic-style">Quia enim quisquam ipsa?</span>
         </div>
 
         <div class="form-wrapper">
           <form action="post">
             <fieldset>
               <legend class="form-header">Let's do this!</legend>
-              <div class="form-section">
-                <div class="form-element">
-                  <label for="first-name">First Name</label>
-                  <input
-                    class="form-input"
-                    type="text"
-                    id="first-name"
-                    name="first-name"
-                  />
+              <div class="form-sections">
+                <div class="form-section">
+                  <div class="form-element">
+                    <label class="form-label" for="first-name">First Name</label>
+                    <input
+                      class="form-input"
+                      type="text"
+                      id="first-name"
+                      name="first-name"
+                      required
+                    />
+                  </div>
+                  <div class="form-element">
+                    <label class="form-label" for="last-name">Last Name</label>
+                    <input
+                      class="form-input"
+                      type="text"
+                      id="last-name"
+                      name="last-name"
+                      required
+                    />
+                  </div>
                 </div>
-                <div class="form-element">
-                  <label for="last-name">Last Name</label>
-                  <input
-                    class="form-input"
-                    type="text"
-                    id="last-name"
-                    name="last-name"
-                  />
+  
+                <div class="form-section">
+                  <div class="form-element">
+                    <label class="form-label" for="email">Email</label>
+                    <input
+                      class="form-input"
+                      type="email"
+                      id="email"
+                      name="email"
+                      required
+                    />
+                  </div>
+                  <div class="form-element">
+                    <label class="form-label" for="phone">Phone Number</label>
+                    <input
+                      class="form-input"
+                      type="number"
+                      id="phone"
+                      name="phone"
+                      required
+                    />
+                  </div>
                 </div>
+  
+                <div class="form-section">
+                  <div class="form-element">
+                    <label class="form-label" for="password">Password</label>
+                    <input
+                      class="form-input"
+                      type="password"
+                      id="password"
+                      name="password"
+                      required
+                    />
+                  </div>
+                  <div class="form-element">
+                    <label class="form-label" for="confirm-password"
+                      >Confirm password</label
+                    >
+                    <input
+                      class="form-input"
+                      type="password"
+                      id="confirm-password"
+                      name="confirm-password"
+                      required
+                    />
+                  </div>
+                </div>
+              </fieldset>
+  
+              <div class="submit-area">
+                <button class="form-button" type="submit">Create Account</button>
+                <p class="have-account">
+                  Already have an account? <a class="login-link" href="">Log in</a>
+                </p>
               </div>
-
-              <div class="form-section">
-                <div class="form-element">
-                  <label class="form-label" for="email">Email</label>
-                  <input
-                    class="form-input"
-                    type="email"
-                    id="email"
-                    name="email"
-                  />
-                </div>
-                <div class="form-element">
-                  <label for="phone">Phone Number</label>
-                  <input
-                    class="form-input"
-                    type="number"
-                    id="phone"
-                    name="phone"
-                  />
-                </div>
               </div>
-
-              <div class="form-section">
-                <div class="form-element">
-                  <label for="password">Password</label>
-                  <input
-                    class="form-input"
-                    type="password"
-                    id="password"
-                    name="password"
-                  />
-                </div>
-                <div class="form-element">
-                  <label for="confirm-password">Confirm password</label>
-                  <input
-                    class="form-input"
-                    type="password"
-                    id="confirm-password"
-                    name="confirm-password"
-                  />
-                </div>
-              </div>
-            </fieldset>
-
-            <div class="submit-area">
-              <button type="submit">Create Account</button>
-              <p class="have-account">
-                Already have an account? <a href="">Log in</a>
-              </p>
-            </div>
           </form>
         </div>
       </div>
